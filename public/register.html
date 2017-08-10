@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <style>
+        #zc{
+            width: 100%;
+            margin: auto auto;
+        }
+        #zc>img{
+            width: 100%;
+        }
+        #zc>div{
+            width:40%;
+            height:500px;
+            background: rgba(255,255,255,0.5);
+            position: absolute;
+            left:75px;
+            top:100px;
+            border-radius:10px ;
+        }
+        ul{
+            list-style: none;
+        }
+        ul>li{
+            display: inline-flex;
+            height:80px;
+            line-height: 80px;
+        }
+        ul>li>div:first-child{
+            width:100px;
+            margin-right:20px ;
+        }
+        ul>li>div:nth-child(2){
+            width:150px;
+            margin-right:50px ;
+        }
+        ul>li>div:nth-child(2)>input{
+            width: 189px;
+            padding: 10px;
+            border: 0;
+            box-sizing: border-box;
+        }
+        ul>li>div:nth-child(3){
+            color: #ddd;
+        }
+        ul>li:last-child>div:nth-child(2)>input{
+            background: #5cb85c;
+            color: #fff;
+            cursor: pointer;
+        }
+        div.findc{
+            color:red;
+        }
+        img{
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+    <div id="zc">
+        <img src="img/slider/1.jpg">
+        <div>
+            <h1 style="color: #ffae4f">用户注册</h1>
+            <ul>
+                <li>
+                    <div>
+                        用户名：
+                    </div>
+                    <div>
+                        <input type="text" placeholder="请输入您想注册的用户名" id="uname">
+                    </div>
+                    <div>
+                        用户名可以包含数字或字母
+                    </div>
+                </li>
+                <li>
+                    <div>密码：</div>
+                    <div>
+                        <input type="password" placeholder="请输入密码" id="upwd1">
+                    </div>
+                    <div>密码长度在6~12位之间</div>
+                </li>
+                <li>
+                    <div>确认密码：</div>
+                    <div>
+                        <input type="password" placeholder="请再次输入密码" id="upwd2">
+                    </div>
+                    <div></div>
+                </li>
+                <li>
+                    <div></div>
+                    <div>
+                        <input type="button" value="注册" id="btn">
+                    </div>
+                    <div></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
